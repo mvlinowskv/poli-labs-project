@@ -1,0 +1,39 @@
+.container-elements {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    margin-bottom: 130px;
+    gap: 47px;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+        flex-wrap: nowrap;
+    }
+    &__h3 {
+        font-size: 32px;
+        color: $secondary-color;
+    }
+    &__span {
+        color: $primary-color;
+    }
+    &__image,
+    &__text {
+        width: 100%;
+    }
+    &__image {
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: inherit;
+        }
+    }
+    &__text {
+        text-align: justify;
+    }
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}

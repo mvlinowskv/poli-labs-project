@@ -1,0 +1,83 @@
+.form {
+    background-color: RGB(216, 216, 216);
+    form {
+        text-align: center;
+        @media (min-width: 992px) {
+            text-align: start;
+        }
+    }
+    span {
+        color: $primary-color;
+    }
+    &__container {
+        max-width: 780px;
+        margin: auto;
+        width: 100%;
+    }
+    &__h6 {
+        font-size: 32px;
+        margin-top: 0;
+        color: $secondary-color;
+        position: relative;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 32px;
+        text-align: center;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            border-bottom: 2px solid RGB(151, 151, 151);
+            width: 181px;
+            left: 27%;
+        }
+    }
+    label {
+        color: #9E9FA2;
+    }
+    p {
+        margin-bottom: 12px;
+        color: #9E9FA2;
+    }
+    input[type=text],
+    textarea,
+    input[type=email] {
+        width: 80%;
+        height: 64px;
+        border: 0;
+        border-bottom: 2px solid #D8D8D8;
+        @media (min-width: 992px) {
+            width: 100%;
+        }
+        &:focus {
+            outline: 0;
+            border: 0;
+        }
+    }
+    textarea {
+        height: inherit;
+    }
+    input[type=submit] {
+        display: inline-block;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        background-color: $primary-color;
+        color: #fff;
+        border: 0;
+    }
+    .wpcf7-spinner {
+        position: absolute;
+    }
+    .div__btn {
+        text-align: center;
+    }
+    .wpcf7-list-item-label {
+        color: #9E9FA2;
+        font-size: 12px;
+    }
+    .wpcf7-list-item {
+        margin-bottom: 12px;
+    }
+}

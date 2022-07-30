@@ -1,0 +1,21 @@
+.contact {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 52px 0;
+    &__h {
+        font-size: 32px;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__button {
+        font-weight: bold;
+        font-size: 32px;
+        padding: 10px 15px;
+    }
+}

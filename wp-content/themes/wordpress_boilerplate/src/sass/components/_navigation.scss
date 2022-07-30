@@ -1,0 +1,111 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #f3f1f4;
+    margin-top: 0;
+    padding: 15px;
+    z-index: 10;
+    @media (min-width: 992px) {
+        padding-top: 47px;
+    }
+    &__container {
+        max-width: 1180px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        transition: right 0.4s ease-out;
+        background-color: #f3f1f4;
+        border-left: 3px solid #9dcd48;
+        height: 100%;
+        z-index: 10;
+        @media (min-width: 992px) {
+            width: 100%;
+            position: inherit;
+            border-left: 0;
+            height: inherit;
+        }
+        &__ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+            @media (min-width: 992px) {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            @media (min-width:1199px) {
+                gap: 69px;
+                justify-content: end;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        outline: none;
+        border: 0;
+        color: $primary-color;
+        cursor: pointer;
+        background-color: transparent;
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    .open {
+        right: 0!important;
+        transition: right 0.4s ease-out;
+    }
+}
+
+.menu-item {
+    margin-right: 0.5rem;
+    font-weight: normal;
+    a {
+        color: #000;
+    }
+}
+
+.logo {
+    max-width: 180px;
+}
+
+.menu-item {
+    margin-right: 0.5rem;
+    font-weight: normal;
+    display: block;
+    font-size: 1rem;
+    text-align: start;
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        transition: border-bottom 0.4s ease-in;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $primary-color;
+            border-bottom: 1px solid $primary-color;
+            transition: border-bottom 0.4s ease-in;
+        }
+    }
+}
+
+.current {
+    &-menu {
+        &-item {
+            a {
+                color: $primary-color;
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+}

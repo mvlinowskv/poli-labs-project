@@ -1,0 +1,58 @@
+.doctors {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 81px 0;
+    &__cont {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    &__box {
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+        @media (min-width:992px) {
+            width: 30%;
+        }
+        @media (min-width: 1199px) {
+            width: 25%;
+        }
+    }
+    &__container {
+        max-width: 1180px;
+        margin: auto;
+        width: 100%;
+    }
+    &__span {
+        color: $primary-color;
+    }
+    &__h5 {
+        font-size: 32px;
+        margin-bottom: 34px;
+        margin-top: 0;
+        width: fit-content;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            border-bottom: 2px solid RGB(151, 151, 151);
+            width: 181px;
+            left: 27%;
+        }
+    }
+    &__h {
+        font-size: 22px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    &__function {
+        font-size: 16px;
+    }
+}

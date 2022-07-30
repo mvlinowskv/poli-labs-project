@@ -1,0 +1,32 @@
+.numbers {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 130px;
+    &__container {
+        width: 100%;
+        max-width: 1180px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 0;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+            flex-wrap: nowrap;
+        }
+    }
+    &__box {
+        width: 180px;
+        text-align: center;
+    }
+    &__h4 {
+        font-size: 64px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__p {
+        padding: 0 20px;
+        color: $secondary-color;
+    }
+}

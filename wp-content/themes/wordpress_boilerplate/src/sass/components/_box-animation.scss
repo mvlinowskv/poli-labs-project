@@ -1,0 +1,84 @@
+.box-animation {
+    &__container {
+        max-width: 1180px;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+        &-info {
+            max-width: 1180px;
+            margin: auto;
+            width: 100%;
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+        }
+    }
+    &__h4 {
+        font-size: 32px;
+        margin-bottom: 96px;
+        margin-top: 64px;
+        width: fit-content;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            border-bottom: 2px solid RGB(151, 151, 151);
+            width: 181px;
+            left: 27%;
+        }
+    }
+    span {
+        color: $primary-color;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color;
+            transition: color 0.4s ease-out;
+            svg {
+                color: $primary-color;
+                transition: color 0.4s ease-out;
+            }
+        }
+        &-info {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__background {
+        background-color: #D8D8D8;
+    }
+    &__info {
+        padding: 81px 0;
+    }
+    &__small-icon {
+        margin-right: 22px;
+    }
+    .active {
+        color: $primary-color;
+        transition: color 0.4s ease-out;
+        border-bottom: 3px solid $primary-color;
+        svg {
+            color: $primary-color;
+            transition: color 0.4s ease-out;
+        }
+    }
+}

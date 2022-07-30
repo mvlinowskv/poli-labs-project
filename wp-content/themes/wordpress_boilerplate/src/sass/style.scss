@@ -1,0 +1,27 @@
+/*!
+    Theme Name: mvlinowskv_theme
+    Description: Wordpress theme based on bootstrap
+    Version: 1.0.0
+    Author: Klaudia Malinowska
+    Author URI: 
+    Text Domain: mvlinowskv
+    Tags: Bootstrap, wordpress
+
+*/
+
+// Base
+@import "base/variables";
+@import "base/layout";
+@import "base/typography";
+@import "base/buttons";
+// Components
+@import "components/navigation";
+@import "components/header";
+@import "components/boxes";
+@import "components/box-image-text";
+@import "components/numbers";
+@import "components/contact";
+@import "components/doctors";
+@import "components/box-animation";
+@import "components/form";
+@import "components/footer";

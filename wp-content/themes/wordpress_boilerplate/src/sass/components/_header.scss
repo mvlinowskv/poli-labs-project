@@ -1,0 +1,31 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    height: 658px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+    &__body {
+        width: 100%;
+        max-width: 1180px;
+        margin: auto;
+    }
+    &__h1 {
+        font-size: calc(2rem + .75vw);
+        color: #474747;
+        margin: 0;
+        &__primary {
+            color: $primary-color;
+        }
+    }
+    &__p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}

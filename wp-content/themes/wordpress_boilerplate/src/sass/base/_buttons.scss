@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    border: 2px solid;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    &--transparent {
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+    &--white {
+        border-color: #fff;
+        color: #fff;
+    }
+}
